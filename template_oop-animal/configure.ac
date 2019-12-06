@@ -24,5 +24,8 @@ LT_INIT
 # Checks for library functions.
 
 AC_CONFIG_FILES([Makefile
-                 src/Makefile])
+                 src/Makefile
+				 src/base/Makefile
+				 src/amphibia/Makefile
+				 src/mammal/Makefile])
 AC_OUTPUT

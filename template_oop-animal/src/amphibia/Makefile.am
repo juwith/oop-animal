@@ -7,4 +7,5 @@ libanimalamphibia_la_LIBADD = \
 	$(top_builddir)/src/base/libanimalbase.la
 
 libanimalamphibia_la_CFLAGS = \
-	-I$(top_srcdir)/src/base \
+	-I$(top_srcdir)/src/base
+
