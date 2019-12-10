@@ -4,13 +4,13 @@
 
 void _dog_action(Dog* obj)
 {
-	Amphbia_action(obj->super);
+	Mammal_action(obj->super);
 	printf("add action from dog class\n");
 }
 
 void _dog_destroy(Dog* obj)
 {
-	Amphbia_destroy(obj->super);
+	Mammal_destroy(obj->super);
 	free(obj);
 	obj = NULL;
 }
@@ -20,7 +20,7 @@ Dog* Dog_init()
 	Dog *obj = (Dog*)calloc(1, sizeof(Dog));
 
 	//init parent
-	obj->super = Amphbia_init();
+	obj->super = Mammal_init();
 
 	//add child
 	obj->action_dog = _dog_action;
