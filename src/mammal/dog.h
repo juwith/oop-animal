@@ -30,7 +30,6 @@ static inline bool Dog_isalive(Dog *obj)
 	return Mammal_isalive(super);
 }
 
-//virtual
 static inline void Dog_set_name(Dog *obj,char* name)
 {
 	Mammal_Obj *super = obj->super;
@@ -46,6 +45,11 @@ static inline void Dog_print_info(Dog *obj)
 {
 	Mammal_Obj *super = obj->super;
 	Mammal_print_info(super);
+}
+
+static inline void Dog_destroy(Dog *obj)
+{
+	obj->destroy(obj);
 }
 
 Dog* Dog_init();

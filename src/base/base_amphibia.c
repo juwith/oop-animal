@@ -3,13 +3,13 @@
 #include "base_amphibia.h"
 
 
-void _amphibia_action(Amphbia_Obj* obj)
+void _amphibia_action(Amphibia_Obj* obj)
 {
 	ANI_action(obj->super);
 	printf("add action from amphibia class\n");
 }
 
-void _amphibia_destroy(Amphbia_Obj* obj)
+void _amphibia_destroy(Amphibia_Obj* obj)
 {
 	ANI_destroy(obj->super);
 	free(obj);
@@ -32,9 +32,9 @@ void _amphibia_printfinfo(ANI_Obj* super)
 	printf("print name is : %s, alive %d\n",super->name,ANI_isalive(super));
 }
 
-Amphbia_Obj* Amphbia_init()
+Amphibia_Obj* Amphibia_init()
 {
-	Amphbia_Obj *obj = (Amphbia_Obj*)calloc(1, sizeof(Amphbia_Obj));
+	Amphibia_Obj *obj = (Amphibia_Obj*)calloc(1, sizeof(Amphibia_Obj));
 
 	//init parent
 	obj->super = ANI_init();

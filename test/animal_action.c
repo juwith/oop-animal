@@ -3,6 +3,8 @@
 
 #include "dog.h"
 #include "cat.h"
+#include "prog.h"
+
 int main()
 {
 	Dog* dog = Dog_init();
@@ -17,6 +19,13 @@ int main()
 
 	Cat* cat = Cat_init();
 	Cat_action(cat);
+	
+	Prog* prog = Prog_init();
+	Prog_action(prog);
+	
+	Dog_destroy(dog);
+	Cat_destroy(cat);
+	Prog_destroy(prog);
 
 	return 0;
 }
