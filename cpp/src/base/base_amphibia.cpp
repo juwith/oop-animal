@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "base_amphibia.h"
 
@@ -11,13 +12,13 @@ void Amphibia_Obj::action_amp()
 }
 
 //virtual
-void Amphibia_Obj::set_name(char* name)
+void Amphibia_Obj::set_name(string name)
 {
 	cout << "set name : " << name << endl;
 	ANI_Obj::set_name(name);
 }
 
-char* Amphibia_Obj::get_name()
+string Amphibia_Obj::get_name()
 {
 	return ANI_Obj::get_name();
 }

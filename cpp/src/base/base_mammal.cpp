@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "base_mammal.h"
 
@@ -11,13 +12,13 @@ void Mammal_Obj::action_mam()
 }
 
 //virtual
-void Mammal_Obj::set_name(char* name)
+void Mammal_Obj::set_name(string name)
 {
 	cout << "set name : " << name << endl;
 	ANI_Obj::set_name(name);
 }
 
-char* Mammal_Obj::get_name()
+string Mammal_Obj::get_name()
 {
 	return ANI_Obj::get_name();
 }

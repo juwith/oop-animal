@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "dog.h"
 #include "cat.h"
@@ -14,7 +15,7 @@ int main()
 
 	char* name = (char*)"puppy";
 	dog->set_name(name);
-	char* getname = dog->get_name();
+	string getname = dog->get_name();
 	cout << "getname is : " << getname << endl;
 	dog->set_alive(true);
 	dog->print_info();
