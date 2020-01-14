@@ -9,11 +9,10 @@ using namespace std;
 
 int main()
 {
-
 	Dog* dog = new Dog();
 	dog->action_dog();
 
-	char* name = (char*)"puppy";
+	string name("puppy");
 	dog->set_name(name);
 	string getname = dog->get_name();
 	cout << "getname is : " << getname << endl;
