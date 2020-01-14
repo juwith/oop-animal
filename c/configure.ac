@@ -25,8 +25,8 @@ LT_INIT
 
 AC_CONFIG_FILES([Makefile
                  src/Makefile
-				 src/base/Makefile
-				 src/amphibia/Makefile
-				 src/mammal/Makefile
-				 test/Makefile])
+                 src/base/Makefile
+                 src/amphibia/Makefile
+                 src/mammal/Makefile
+                 test/Makefile])
 AC_OUTPUT
