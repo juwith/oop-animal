@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
+
 #include "base_amphibia.h"
 
 using namespace std;

@@ -1,8 +1,5 @@
 #include <iostream>
 
-#include <stdlib.h>
-#include <stdbool.h>
-
 #include "base_object.h"
 
 using namespace std;

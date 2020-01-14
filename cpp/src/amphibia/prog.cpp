@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
+
 #include "prog.h"
 
 using namespace std;

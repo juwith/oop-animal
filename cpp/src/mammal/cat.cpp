@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
+
 #include "cat.h"
 
 using namespace std;

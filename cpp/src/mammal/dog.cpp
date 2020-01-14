@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
+
 #include "dog.h"
 
 using namespace std;
